@@ -1,0 +1,237 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title Sargas Newsletter
+    // Bootstrap Core CSS
+    link(rel='stylesheet', href='/css/bootstrap.min.css', type='text/css')
+    // Custom Fonts
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', href='/font-awesome/css/font-awesome.min.css', type='text/css')
+    // Plugin CSS
+    link(rel='stylesheet', href='/css/animate.min.css', type='text/css')
+    // Custom CSS
+    link(rel='stylesheet', href='/css/creative.css', type='text/css')
+    // Page Loader Imports
+    link(rel='stylesheet', href='/css/normalize.css')
+    link(rel='stylesheet', href='/css/main.css')
+    script(src='js/vendor/modernizr-2.6.2.min.js')
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+  body#page-top
+    nav#mainNav.navbar.navbar-default.navbar-fixed-top
+      .container-fluid
+        // Brand and toggle get grouped for better mobile display
+        .navbar-header
+          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          img(src='/img/sargaslogoheader.png')
+        // Collect the nav links, forms, and other content for toggling
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            li
+              br
+              b
+            li
+              a(href='https://plus.google.com/114015669704270909488/posts')
+                i.fa.fa-google-plus.fa-2x.wow.bounceIn
+            li
+              a(href='https://www.facebook.com/Sargas-Inc-Jobs-1551824575031306/')
+                i.fa.fa-facebook.fa-2x.wow.bounceIn
+            li
+              a(href='https://www.youtube.com/channel/UCaaVhqbG8cD3XQtRFlYxPBg')
+                i.fa.fa-youtube.fa-2x.wow.bounceIn
+            li
+              a(href='https://twitter.com/SargasAsia')
+                i.fa.fa-twitter.fa-2x.wow.bounceIn
+        // /.navbar-collapse
+      // /.container-fluid
+    header
+      .header-content
+        .header-content-inner
+          h2
+            b Explore better career opportunities
+          p
+            | Sign Up for our newsletter and be ahead of the latest            
+            br
+            | news and career opportunities!
+          
+          
+           .col-lg-12
+           .input-group-btn
+             form(action='/lists/'+list.id+'/subscribe/', method='post', class='form-inline')
+              input.form-control(type='email', name='email', placeholder='email address')
+  
+              button.btn.btn-default.wow.tada(type='submit', value='Add Member', data-toggle='modal', data-target='#myModal') SIGN UP!
+
+              
+         
+    #myModal.modal.fade(role='dialog')
+      .modal-dialog
+        // Modal content
+        .modal-content
+          .modal-header
+            button.close(type='button', data-dismiss='modal') ×
+            h4.modal-title Thank You for Signing Up!
+          .modal-body
+            p Please check your email inbox to confirm your subscription
+          .modal-footer
+            .progress
+              .progress-bar.progress-bar-striped.active(role='progressbar', aria-valuenow='100', aria-valuemin='0', aria-valuemax='100', style='width:100%')
+                | Loading..
+    //
+      <section class="bg-primary" id="about">
+      <div class="container">
+      <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 text-center">
+      <h2 class="section-heading">Get the latest news and updates!</h2>
+      <hr class="light">
+      <p class="text-faded">Sign up for our newsletter and be updated with the latest
+      news and upcoming events from the Sargas Incorporated website.</p>
+      <a href="#" class="btn btn-default btn-xl">Get Started!</a>
+      </div>
+      </div>
+      </div>
+      </section>
+    section#services
+      .container
+        .row
+          .col-lg-12.text-center
+            h2.section-heading Sargas Incorporated
+            hr.primary
+      .container
+        .row
+          .col-lg-3.col-md-6.text-center
+            .service-box
+              i.fa.fa-4x.fa-users.wow.bounceIn.text-primary
+              h3 Best Talents
+              p.text-muted We recruit the best talent in the Philippines.
+          .col-lg-3.col-md-6.text-center
+            .service-box
+              i.fa.fa-4x.fa-line-chart.wow.bounceIn.text-primary(data-wow-delay='.1s')
+              h3 Career Advancement
+              p.text-muted Our managers will mentor you and help you expand your skills
+          .col-lg-3.col-md-6.text-center
+            .service-box
+              i.fa.fa-4x.fa-money.wow.bounceIn.text-primary(data-wow-delay='.2s')
+              h3 Great Incentives
+              p.text-muted We offer high salaries and generous incentives for top performers.
+          .col-lg-3.col-md-6.text-center
+            .service-box
+              i.fa.fa-4x.fa-heart.wow.bounceIn.text-primary(data-wow-delay='.3s')
+              h3 Our Staff Loves Us!
+              p.text-muted We train people to reach their potential! 
+    section#portfolio.no-padding
+      .container-fluid
+        .row.no-gutter
+          .col-lg-4.col-sm-6
+            a.portfolio-box(href='#')
+              img.img-responsive(src='/img/portfolio/1.jpg', alt='')
+              .portfolio-box-caption
+                .portfolio-box-caption-content
+                  .project-category.text-faded
+                    | Sargas Inc.
+                  .project-name
+                    | Leading outsourcing services
+          .col-lg-4.col-sm-6
+            a.portfolio-box(href='#')
+              img.img-responsive(src='/img/portfolio/2.jpg', alt='')
+              .portfolio-box-caption
+                .portfolio-box-caption-content
+                  .project-category.text-faded
+                    | OUR STAFF:
+                  .project-name
+                    | Professional and career-oriented
+          .col-lg-4.col-sm-6
+            a.portfolio-box(href='#')
+              img.img-responsive(src='/img/portfolio/3.jpg', alt='')
+              .portfolio-box-caption
+                .portfolio-box-caption-content
+                  .project-category.text-faded
+                    | Competitive Edge
+                  .project-name
+                    | Modern facilities and best technology
+          .col-lg-4.col-sm-6
+            a.portfolio-box(href='#')
+              img.img-responsive(src='/img/portfolio/4.jpg', alt='')
+              .portfolio-box-caption
+                .portfolio-box-caption-content
+                  .project-category.text-faded
+                    | Career Advancement
+                  .project-name
+                    | Grow your career with us!
+          .col-lg-4.col-sm-6
+            a.portfolio-box(href='#')
+              img.img-responsive(src='/img/portfolio/5.jpg', alt='')
+              .portfolio-box-caption
+                .portfolio-box-caption-content
+                  .project-category.text-faded
+                    | Best Talents
+                  .project-name
+                    | We recruit only the best talents!
+          .col-lg-4.col-sm-6
+            a.portfolio-box(href='#')
+              img.img-responsive(src='/img/portfolio/6.jpg', alt='')
+              .portfolio-box-caption
+                .portfolio-box-caption-content
+                  .project-category.text-faded
+                    | Fun Working Environment
+                  .project-name
+                    | Join us today!
+    //
+      <aside class="bg-dark">
+      <div class="container text-center">
+      <div class="call-to-action">
+      <h2>Free Download at Start Bootstrap!</h2>
+      <a href="#" class="btn btn-default btn-xl wow tada">Download Now!</a>
+      </div>
+      </div>
+      </aside>
+    section#contact
+      .container
+        .row
+          .col-lg-8.col-lg-offset-2.text-center
+            h2.section-heading Sign up now and be part of our growing team.
+            hr.primary
+            p
+              | Unit 2 LRCI Bldg 2,
+              | Mac Arthur Hiway
+              | Salapungan, Angeles City Pampanga Philippines 2009
+          .col-lg-4.col-lg-offset-2.text-center
+            i.fa.fa-phone.fa-3x.wow.bounceIn
+            p
+              | Smart:     +63 999-884-8723
+              br
+              | Globe:     +63 977-129-9410
+              br
+              | Land Line:  (045) 304-0355
+          .col-lg-4.text-center
+            i.fa.fa-envelope-o.fa-3x.wow.bounceIn(data-wow-delay='.1s')
+            p
+              a(href='https://mail.google.com/mail/u/0/?view=cm&fs=1&to=jobs@sargas.asia&tf=1')  jobs@sargas.asia
+    // jQuery
+    script(src='/js/jquery.js')
+    // Bootstrap Core JavaScript
+    script(src='/js/bootstrap.min.js')
+    // Plugin JavaScript
+    script(src='/js/jquery.easing.min.js')
+    script(src='/js/jquery.fittext.js')
+    script(src='/js/wow.min.js')
+    // Custom Theme JavaScript
+    script(src='/js/creative.js')
+    // Page Loader Scripts
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
+    script.
+      window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\\/script>')
+    script(src='js/main.js')

@@ -1,0 +1,48 @@
+doctype
+html
+  head
+    title= title + ' | MC API Node.js Example'
+    
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    
+    link(rel='stylesheet', href='/css/bootstrap.min.css', type='text/css')
+    
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800', rel='stylesheet', type='text/css')
+    
+    link(href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic', rel='stylesheet', type='text/css')
+    
+    link(rel='stylesheet', href='/font-awesome/css/font-awesome.min.css', type='text/css')
+    
+    link(rel='stylesheet', href='/css/animate.min.css', type='text/css')
+    
+    link(rel='stylesheet', href='/css/creative.css', type='text/css')
+    
+    script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+    script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+  
+  body
+  
+    div(class="container")
+      
+      if success_flash
+        p(class="text-success")= success_flash
+      if error_flash
+        p(class="text-error")= error_flash
+      div(class="content")
+        block content
+        
+// jQuery
+    script(src='/js/jquery.js')
+// Bootstrap Core JavaScript
+    script(src='/js/bootstrap.min.js')
+// Plugin JavaScript
+    script(src='/js/jquery.easing.min.js')
+    script(src='/js/jquery.fittext.js')
+    script(src='/js/wow.min.js')
+// Custom Theme JavaScript
+    script(src='/js/creative.js')
+// Page Loader Scripts
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
+    script.
+      window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\\/script>')
+    script(src='/js/main.js')
